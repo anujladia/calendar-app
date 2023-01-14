@@ -6,6 +6,7 @@ This app servers a calendar widget
 ## Tech Stack
 * `Node.js` for backend
 * `Firestore` for Database, which is a NoSQL 
+* `Reac.js` for the Frontend
 
 ## Database
 * Collection called `events`

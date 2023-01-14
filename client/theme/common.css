@@ -1,0 +1,17 @@
+:root {
+  --cPrimary: #006edc;
+  --cPageBackground: rgb(229 241 255 / 70%);
+  --cPrimaryFont: #484848;
+  --cCardBackground: rgb(255, 255, 255);
+  --cBorder: rgb(72 72 72 / 30%);
+  --cLight: rgb(255, 255, 255);
+  --cPrimaryButton: #FF3466;
+
+  --cardShadows: 4px 2px 4px 2px rgb(0 0 0 / 20%);
+
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}

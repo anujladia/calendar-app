@@ -71,13 +71,17 @@ const bookEvent = async (req, res) => {
           if (data.status) {
             throw {
               name: "already_booked",
-              message: "Time slot passed is already booked"
+              message: "Time slot passed is already booked. Select a different slot or select a smaller duration"
             };
           }
 
           docIdToBeUpdated.push(doc.id);
         }
       });
+
+    if (docIdToBeUpdated.length !== numberOfSlotsToBook) {
+      return sendError(res, 404, "Please select a smaller duration to book this event");
+    }
     
     // Update the status of the event as booked
     const updateDocTask = [];

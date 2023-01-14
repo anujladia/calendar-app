@@ -1,9 +1,6 @@
 // duration is in minutes always
 const parseTime = (timestamp) => {
   const date = new Date(timestamp);
-  console.log(timestamp);
-  console.log(date);
-
   let hour = date.getHours();
   const minute = date.getMinutes();
 
